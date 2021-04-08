@@ -1,7 +1,3 @@
----------------------------------------
-Create catalog controller inside the API project by adding CatalogController.cs to
-the Controllers folder, with the following code:
-
 using Microsoft.AspNetCore.Mvc;
 using Untouchable.Snow.Domain;
 
