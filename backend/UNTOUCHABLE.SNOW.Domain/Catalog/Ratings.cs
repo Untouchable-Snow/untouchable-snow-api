@@ -2,12 +2,12 @@ Using System
 
 namespace Untouchable.Snow.Domain.Catalog
 {
-public class Rating
-{
-	public int Star { get; set; }
-	public string UserName { get; set; }
-	public string Review { get; set; }
-}
+	public class Rating
+	{
+		public int Star { get; set; }
+		public string UserName { get; set; }
+		public string Review { get; set; }
+	}
 }
 
 public Rating(int stars, string userName, string review)
@@ -26,5 +26,3 @@ public Rating(int stars, string userName, string review)
 	this.UserName = userName;
 	this.Review = review;
 }
-
-

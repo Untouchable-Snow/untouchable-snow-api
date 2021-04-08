@@ -42,25 +42,9 @@ public Item(string name, string description, string brand, decimal price)
 	this.Price = price;
 }
 
-
-
------------------------------------------
-Add the following property to the other properties:
-
 public List<Rating> Ratings { get; set; }
-
-
-------------------------------------------
-Create the method to add a new rating (remember that we have constructor logic
-that only allows us to add valid ratings):
 
 public void AddRating(Rating rating)
 {
 	this.Ratings.Add(rating);
 }
-
-
-
-
-
-
