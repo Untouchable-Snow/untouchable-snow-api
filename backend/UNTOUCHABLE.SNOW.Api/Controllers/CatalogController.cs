@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Untouchable.Snow.Domain;
+using System.Collections.Generic;
+using Untouchable.Snow.Domain.Catalog;
 
 namespace Untouchable.Snow.Api.Controllers
 {
@@ -29,12 +30,12 @@ namespace Untouchable.Snow.Api.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult Post(item item)
+		public IActionResult Post(Item item)
 		{
     		return Created("/catalog/42", item);
 		}
 
-		[HttpPost("{id:int}/ratings")]
+		[HttpPost("{id:int}/Ratings")]
 		public IActionResult PostRating(int id, [FromBody] Rating rating)
 		{
     		var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
@@ -44,7 +45,7 @@ namespace Untouchable.Snow.Api.Controllers
     		return Ok(item);
 		}
 
-		[HttpPost("{id:int}/ratings")]
+		[HttpPost("{id:int}")]
 		public IActionResult PutItem(int id, [FromBody] Item item)
 		{
    			 return Ok();
