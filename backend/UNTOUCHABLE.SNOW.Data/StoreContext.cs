@@ -1,4 +1,5 @@
 ﻿using Untouchable.Snow.Domain.Catalog;
+using Untouchable.Snow.Domain.Order;
 using Microsoft.EntityFrameworkCore;
 
 namespace Untouchable.Snow.Data
@@ -11,5 +12,6 @@ namespace Untouchable.Snow.Data
         }
 
         public DbSet<Item> Items { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
