@@ -12,23 +12,23 @@ namespace UNTOUCHABLE.SNOW.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class OrdersController-async : ControllerBase
+    public class OrdersController : ControllerBase
     {
         private readonly StoreContext _context;
 
-        public OrdersController-async(StoreContext context)
+        public OrdersController(StoreContext context)
         {
             _context = context;
         }
 
-        // GET: api/OrdersController-async
+        // GET: api/Orders
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
         {
             return await _context.Orders.ToListAsync();
         }
 
-        // GET: api/OrdersController-async/5
+        // GET: api/Orders/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Order>> GetOrder(int id)
         {
@@ -42,7 +42,7 @@ namespace UNTOUCHABLE.SNOW.Api.Controllers
             return order;
         }
 
-        // PUT: api/OrdersController-async/5
+        // PUT: api/Orders/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutOrder(int id, Order order)
@@ -73,7 +73,7 @@ namespace UNTOUCHABLE.SNOW.Api.Controllers
             return NoContent();
         }
 
-        // POST: api/OrdersController-async
+        // POST: api/Orders
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Order>> PostOrder(Order order)
@@ -84,7 +84,7 @@ namespace UNTOUCHABLE.SNOW.Api.Controllers
             return CreatedAtAction("GetOrder", new { id = order.Id }, order);
         }
 
-        // DELETE: api/OrdersController-async/5
+        // DELETE: api/Orders/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOrder(int id)
         {
