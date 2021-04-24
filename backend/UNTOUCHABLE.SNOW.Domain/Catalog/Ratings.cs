@@ -25,8 +25,5 @@ namespace Untouchable.Snow.Domain.Catalog
 			this.UserName = userName;
 			this.Review = review;
 		}
-}	
-	this.Star = stars;
-	this.UserName = userName;
-	this.Review = review;
+	}
 }
