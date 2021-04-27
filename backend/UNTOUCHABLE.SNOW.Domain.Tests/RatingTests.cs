@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using UNTOUCHABLE.SNOW.Domain.Catalog;
+using Untouchable.Snow.Domain.Catalog;
 
 namespace UNTOUCHABLE.SNOW.Domain.Tests
 {
@@ -19,5 +19,13 @@ namespace UNTOUCHABLE.SNOW.Domain.Tests
 			Assert.AreEqual("Mike", rating.UserName);
 			Assert.AreEqual("Great fit!", rating.Review);
 		}
+
+		[TestMethod]
+		[ExpectedException(typeof(ArgumentException))]
+		public void Create_With_Bad_Start_Throws_Error()
+		{
+			var rating = new Rating(0, "Name", "Review");
+		}
+
     }
 }
