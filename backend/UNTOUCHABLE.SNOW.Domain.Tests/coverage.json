@@ -1,0 +1,308 @@
+{
+  "UNTOUCHABLE.SNOW.Domain.dll": {
+    "C:\\Users\\andre\\repos\\untouchable-snow-api\\backend\\UNTOUCHABLE.SNOW.Domain\\Orders\\Order.cs": {
+      "Untouchable.Snow.Domain.Order.Order": {
+        "System.Int32 Untouchable.Snow.Domain.Order.Order::get_Id()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Untouchable.Snow.Domain.Order.OrderItem> Untouchable.Snow.Domain.Order.Order::get_Items()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime Untouchable.Snow.Domain.Order.Order::get_CreatedDate()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal Untouchable.Snow.Domain.Order.Order::get_TotalPrice()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\andre\\repos\\untouchable-snow-api\\backend\\UNTOUCHABLE.SNOW.Domain\\Orders\\OrderItem.cs": {
+      "Untouchable.Snow.Domain.Order.OrderItem": {
+        "System.Int32 Untouchable.Snow.Domain.Order.OrderItem::get_Id()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "Untouchable.Snow.Domain.Catalog.Item Untouchable.Snow.Domain.Order.OrderItem::get_Item()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Untouchable.Snow.Domain.Order.OrderItem::get_Quantity()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal Untouchable.Snow.Domain.Order.OrderItem::get_Price()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\andre\\repos\\untouchable-snow-api\\backend\\UNTOUCHABLE.SNOW.Domain\\Catalog\\Item.cs": {
+      "Untouchable.Snow.Domain.Catalog.Item": {
+        "System.Int32 Untouchable.Snow.Domain.Catalog.Item::get_Id()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String Untouchable.Snow.Domain.Catalog.Item::get_Name()": {
+          "Lines": {
+            "10": 3
+          },
+          "Branches": []
+        },
+        "System.String Untouchable.Snow.Domain.Catalog.Item::get_Description()": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        },
+        "System.String Untouchable.Snow.Domain.Catalog.Item::get_Brand()": {
+          "Lines": {
+            "12": 3
+          },
+          "Branches": []
+        },
+        "System.Decimal Untouchable.Snow.Domain.Catalog.Item::get_Price()": {
+          "Lines": {
+            "13": 3
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Untouchable.Snow.Domain.Catalog.Rating> Untouchable.Snow.Domain.Catalog.Item::get_Ratings()": {
+          "Lines": {
+            "14": 4
+          },
+          "Branches": []
+        },
+        "System.Void Untouchable.Snow.Domain.Catalog.Item::AddRating(Untouchable.Snow.Domain.Catalog.Rating)": {
+          "Lines": {
+            "45": 1,
+            "46": 1,
+            "47": 1
+          },
+          "Branches": []
+        },
+        "System.Void Untouchable.Snow.Domain.Catalog.Item::.ctor(System.String,System.String,System.String,System.Decimal)": {
+          "Lines": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 0,
+            "19": 0,
+            "22": 2,
+            "23": 0,
+            "24": 0,
+            "27": 2,
+            "28": 0,
+            "29": 0,
+            "32": 2,
+            "33": 0,
+            "34": 0,
+            "37": 2,
+            "38": 2,
+            "39": 2,
+            "40": 2,
+            "41": 2,
+            "42": 2
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 16,
+              "EndOffset": 18,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 16,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 22,
+              "Offset": 38,
+              "EndOffset": 40,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 38,
+              "EndOffset": 52,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 27,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 60,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 2
+            },
+            {
+              "Line": 32,
+              "Offset": 91,
+              "EndOffset": 93,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 2
+            },
+            {
+              "Line": 32,
+              "Offset": 91,
+              "EndOffset": 116,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 119,
+              "EndOffset": 121,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 119,
+              "EndOffset": 133,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\andre\\repos\\untouchable-snow-api\\backend\\UNTOUCHABLE.SNOW.Domain\\Catalog\\Ratings.cs": {
+      "Untouchable.Snow.Domain.Catalog.Rating": {
+        "System.Int32 Untouchable.Snow.Domain.Catalog.Rating::get_Id()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 Untouchable.Snow.Domain.Catalog.Rating::get_Star()": {
+          "Lines": {
+            "8": 3
+          },
+          "Branches": []
+        },
+        "System.String Untouchable.Snow.Domain.Catalog.Rating::get_UserName()": {
+          "Lines": {
+            "9": 3
+          },
+          "Branches": []
+        },
+        "System.String Untouchable.Snow.Domain.Catalog.Rating::get_Review()": {
+          "Lines": {
+            "10": 3
+          },
+          "Branches": []
+        },
+        "System.Void Untouchable.Snow.Domain.Catalog.Rating::.ctor(System.Int32,System.String,System.String)": {
+          "Lines": {
+            "12": 3,
+            "13": 3,
+            "14": 3,
+            "15": 1,
+            "16": 1,
+            "19": 2,
+            "20": 0,
+            "21": 0,
+            "24": 2,
+            "25": 2,
+            "26": 2,
+            "27": 2
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 10,
+              "EndOffset": 12,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 14,
+              "Offset": 10,
+              "EndOffset": 18,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 14,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 14,
+              "Offset": 21,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 19,
+              "Offset": 43,
+              "EndOffset": 45,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 43,
+              "EndOffset": 57,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    }
+  }
+}
