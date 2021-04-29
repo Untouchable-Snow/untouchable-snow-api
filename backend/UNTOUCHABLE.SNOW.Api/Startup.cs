@@ -31,7 +31,15 @@ namespace UNTOUCHABLE.SNOW.Api
             services.AddDbContext<StoreContext>(opt =>
                 opt.UseSqlite(Configuration.GetConnectionString("LocalDb"),
                     b => b.MigrationsAssembly("Untouchable.Snow.Api")));
-                    
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins("*");
+                });
+            });
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -59,6 +67,8 @@ namespace UNTOUCHABLE.SNOW.Api
             {
                 endpoints.MapControllers();
             });
+
+            app.UseCors();
         }
     }
 }
